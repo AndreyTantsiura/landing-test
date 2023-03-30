@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(15, 15, 15);
+  max-width: 1400px;
+  margin: auto;
+  color: #fff;
+}
+
+header {
+  height: 900px;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(51, 51, 51, 0.5),
+      rgb(51, 51, 51)
+    ),
+    url(./img/dirk-von-loen.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header_top {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_top_menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header_top_menu > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo {
+  width: 350px;
+  background-color: #fce22a;
+  color: rgb(15, 15, 15);
+  line-height: 90px;
+  text-align: center;
+}
+
+.theme {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 50%;
+}
+
+.header_nav {
+  width: 300px;
+  height: 100%;
+  background-color: rgb(51, 51, 51, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.header_nav > ul li {
+  margin-top: 40%;
+  list-style-type: none;
+  color: rgb(120, 120, 120);
+}
+
+.header_nav > ul li:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.header_title {
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.read_more {
+  width: 120px;
+  height: 40px;
+  background-color: #fce22a;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header_bottom {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  position: absolute;
+  left: 30%;
+  bottom:10%
+}
+
+.header_bottom_line {
+  width: 500px;
+  border: 1px solid rgb(120, 120, 120);;
+}
+
+.bottom_prev, .bottom_next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: large;
+  font-weight: bold;
+}
+
+main {
+  height: 800px;
+  background-color: #333;
+}
