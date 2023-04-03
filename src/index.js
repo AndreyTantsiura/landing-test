@@ -45,7 +45,7 @@ let currentIndex = 0;
 
 buttonPrev.addEventListener('click', () => {
   currentIndex = (currentIndex - 1 + arrImg.length) % arrImg.length;
-  header.style.backgroundImage = `linear-gradient(to bottom, rgb(51, 51, 51, 0.5), rgb(51, 51, 51)), url(${arrImg[currentIndex].img})`;
+  header.style.backgroundImage = `linear-gradient(to bottom, rgb(51, 51, 51, 0.3), rgb(51, 51, 51)), url(${arrImg[currentIndex].img})`;
   headerTitle.textContent = `${arrImg[currentIndex].title}`;
   headerDescribe.textContent = `${arrImg[currentIndex].describe}`;
   counterCurrent.textContent = `${arrImg[currentIndex].id}`;
@@ -53,7 +53,7 @@ buttonPrev.addEventListener('click', () => {
 
 buttonNext.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % arrImg.length;
-  header.style.backgroundImage = `linear-gradient(to bottom, rgb(51, 51, 51, 0.5), rgb(51, 51, 51)), url(${arrImg[currentIndex].img})`;
+  header.style.backgroundImage = `linear-gradient(to bottom, rgb(51, 51, 51, 0.3), rgb(51, 51, 51)), url(${arrImg[currentIndex].img})`;
   headerTitle.textContent = `${arrImg[currentIndex].title}`;
   headerDescribe.textContent = `${arrImg[currentIndex].describe}`;
   counterCurrent.textContent = `${arrImg[currentIndex].id}`;

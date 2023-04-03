@@ -13,7 +13,7 @@ header {
   height: 900px;
   background-image: linear-gradient(
       to bottom,
-      rgb(51, 51, 51, 0.5),
+      rgb(51, 51, 51, 0.3),
       rgb(51, 51, 51)
     ),
     url(./img/daniel-leone.jpg);
@@ -33,7 +33,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0 70px;;
+  margin: 0 70px;
 }
 
 .header_top_menu > a {
@@ -128,11 +128,11 @@ header {
 }
 
 main {
-  height: 800px;
   background-color: #333;
 }
 
-.section1 {
+.section1,
+.section2 {
   height: 800px;
   background-color: rgb(51, 51, 51);
   display: flex;
@@ -145,7 +145,10 @@ main {
   text-align: right;
 }
 
-.section1_title > h2, .section1_title > p {
+.section1_title > h2,
+.section1_title > p,
+.section3_title > h2,
+.section3_title > p {
   margin: 0 0 20px 70px;
 }
 
@@ -156,7 +159,9 @@ main {
   margin-top: 60px;
 }
 
-.content_block {
+.content_block1,
+.content_block2,
+.content_block3 {
   width: 300px;
   height: 500px;
   display: flex;
@@ -169,11 +174,224 @@ main {
   height: 300px;
 }
 
-.content_block > h3 {
+.content_block1 > h3,
+.content_block2 > h3,
+.content_block3 > h3 {
   color: rgb(120, 120, 120);
 }
 
-.content_block > a {
+.content_block1 > a,
+.content_block2 > a,
+.content_block3 > a {
   text-decoration: none;
   color: #fce22a;
+}
+
+.section2 > img {
+  height: 700px;
+  width: 700px;
+  margin-right: 150px;
+}
+
+.section2_content {
+  width: 500px;
+}
+
+.section2_title {
+  height: 700px;
+}
+
+.section2_title > h1 {
+  margin-bottom: 50px;
+  width: 100px;
+}
+
+.section2_title > span {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.section2_title > p {
+  margin-top: 50px;
+  width: 400px;
+}
+
+.section3 {
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  position: relative;
+}
+
+.section3_title {
+  width: 300px;
+  height: 100%;
+  text-align: right;
+  margin-top: 120px;
+}
+
+.section3_content {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+.section3_bottom {
+  width: 66rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+}
+
+.section3_block {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 300px);
+  grid-gap: 50px;
+}
+
+.section3_block > img {
+  height: 100%;
+  width: 100%;
+}
+
+.image_1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.image_5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.section4 {
+  height: 2000px;
+  background-image: linear-gradient(
+      rgb(51, 51, 51),
+      rgb(51, 51, 51, 0.8) 50%,
+      rgb(51, 51, 51) 100%
+    ),
+    url(./img/asher-zhang.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 130px 0 0 300px;
+  position: relative;
+}
+
+.section4_title {
+  width: 700px;
+}
+
+.section4_title h1 {
+  margin-bottom: 30px;
+}
+
+.section4_title p {
+  margin-bottom: 100px;
+}
+
+.section4_content {
+  width: 81%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_block1 {
+  width: 700px;
+}
+
+.text_block1 h3 {
+  color: rgb(120, 120, 120);
+  margin-bottom: 20px;
+}
+
+.text_block1 > p {
+  margin-bottom: 20px;
+}
+
+.img_block1 > img {
+  height: 300px;
+  width: 300px;
+}
+
+.section4_content .read_more {
+  margin-top: 65px;
+}
+
+.section4 .bottom_line {
+  margin: 50px 0;
+  width: 81%;
+}
+
+.section4_form {
+  height: 400px;
+  width: 700px;
+  background-image: url(./img/world_map.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: 5%;
+  right: 50%;
+  margin-right: -350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section4_form p {
+  margin: 25px 0 100px 0;
+}
+
+.section4_form form {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section4_form input {
+  width: 400px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.section4_form button {
+  width: 120px;
+  height: 40px;
+  background-color: #fce22a;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.footer {
+  width: 100%;
+  height: 90px;
+  background-color: #fce22a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info p {
+  color: rgb(15, 15, 15);
+  font-weight: bold;
+}
+
+.icon {
+  width: 100px;
+  margin-right: 175px;
+  display: flex;
+  justify-content: space-between;
 }
