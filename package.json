@@ -1,15 +1,19 @@
 {
+  "homepage": "http://AndreyTantsiura.github.io/landing-test",
   "name": "landing-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd ./src && live-server --port=3000"
   },
   "author": "Andrii",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "live-server": "^1.2.2"
   }
 }
